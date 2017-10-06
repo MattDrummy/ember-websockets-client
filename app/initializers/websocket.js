@@ -3,5 +3,8 @@ export function initialize(/* application */) {
 }
 
 export default {
-  initialize
+  name: 'websockets',
+  initialize: function(controller, app){
+    app.inject('controller', 'websockets', 'service:websockets');
+  }
 };
