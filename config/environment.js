@@ -3,6 +3,9 @@
 
 module.exports = function(environment) {
   let ENV = {
+    'ember-websockets':{
+      socketIO: true,
+    },
     modulePrefix: 'ember-websockets-client',
     environment,
     rootURL: '/',

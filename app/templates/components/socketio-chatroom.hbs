@@ -1,0 +1,20 @@
+{{yield}}
+
+<h1>Welcome to the Socket.IO Chat</h1>
+{{input value=compInput id="comp-message"}}
+<button type="button" name="button" id="submitText" {{action "submitText"}}>PRESS {{room}}</button>
+{{input value=roomInput id="comp-room"}}
+<button type="button" name="button" id="changeRoom" {{action "changeRoom"}}>CHANGE ROOM</button>
+<h3>foo messages</h3>
+<ul>
+  {{#each messagesfoo as |message|}}
+    <li>{{message}}</li>
+  {{/each}}
+</ul>
+
+<h3>bar messages</h3>
+<ul>
+  {{#each messagesbar as |message|}}
+    <li>{{message}}</li>
+  {{/each}}
+</ul>
