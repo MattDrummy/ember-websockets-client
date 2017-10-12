@@ -39,6 +39,6 @@ export default Ember.Component.extend({
       this.get('socketIOService').closeSocketFor('ws://localhost:7000/');
       this.setSockets();
       this.set('roomInput', '');
-    }
+    },
   }
 });
