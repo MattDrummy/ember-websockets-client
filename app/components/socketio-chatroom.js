@@ -18,7 +18,6 @@ export default Ember.Component.extend({
       this.get('room')
     ]);
     socket.on('message', (message)=>{
-      console.log(message);
       this.set(`messages${this.get('room')}`, this.get(`messages${this.get('room')}`).concat(message))
     })
     this.get('actions')[`submitText`] = function(){
